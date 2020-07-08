@@ -1,0 +1,497 @@
+* {
+    box-sizing: border-box;
+  }
+body{
+    margin: 0;
+    background-color: black;
+    background-image: url(https://wallpapercave.com/wp/wnCoprl.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.headersection{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    background-color: black;
+    width: 100%;
+    /* height: 70px; */
+    align-items:center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0px;
+
+
+}
+#imgfloat{
+    float: left;
+    border-radius: 60%;
+    position: relative;
+    left: 10px; 
+}
+.fixfloat{
+
+    margin: 0px;
+    color: white;
+    
+}
+
+.sign{
+    position: relative;
+    top: 12px;
+    left: 20px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 11px;
+}
+.sign:link{
+    color: white;
+}
+.sign:visited{
+    color: rgb(0, 183, 255);
+
+}
+.sign:hover{
+    text-decoration: underline;
+    color: rgb(0, 183, 255);
+
+}
+.navbar{
+    text-decoration: none;
+    padding: 10px;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+.navbar:link{
+    color: white;
+}
+.navbar:visited{
+    color: rgb(0, 183, 255);
+}
+.navbar:hover{
+    text-decoration: underline;
+    color: rgb(0, 183, 255);
+}
+span{
+    position: relative;
+    top: 20px;
+    right:47px;
+    font-size: 17px;
+}
+form{
+    position: relative;
+    right: 10px;
+}
+#searchmovies{
+  transition: width .35s ease-in-out;
+    outline: none;
+    width: 100px;
+}
+#searchmovies:focus{
+    width: 150px;
+}
+#search{
+    color:white;
+    background-color: black;
+    outline: none;
+    border: black;
+}
+#search:hover{
+    color: rgb(0, 183, 255); 
+} 
+
+
+.container{
+    display: grid;
+    grid-template-columns: 50% 50% ;
+    grid-template-rows: 1fr;
+    margin: 40px;
+    background-color: black;
+}
+.itema{
+justify-self: start;
+padding: 20px;
+color: white;
+font-family: Arial, Helvetica, sans-serif;
+padding-right: 80px;
+line-height: 2.2;
+}
+.itemb{
+    justify-self: stretch;
+    align-self: center;
+    /* padding-left: 10px; */
+    /* padding-right: 10px; */
+    }
+.container1{
+        display: grid;
+        grid-template-columns: 50% 50% ;
+        grid-template-rows: 1fr;
+        margin: 40px;
+        background-image: linear-gradient(to bottom right, rgb(85, 15, 15) , black)
+}
+.itema1{
+    justify-self: start;
+    padding: 20px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: 80px;
+    line-height: 2;
+    clear: left;
+}
+.itemb1{
+        float: left;
+        width: 200px;
+        height: 130px;
+    }
+    #signin{
+        border-radius: 15px;
+        font-size: 15px;
+        padding: 9px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin: 10px;
+        background-color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        outline: none;
+    }
+    #join{
+        border-radius: 15px;
+        font-size: 15px;
+        padding: 9px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin: 10px;
+        background-color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        outline: none;
+    }
+    #signin:hover{
+        background-color: rgb(0, 183, 255); 
+} 
+    #join:hover{
+        background-color: rgb(0, 183, 255); 
+    }
+    #alist{
+        justify-self: start;
+        color: white;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        font-size: 20px;
+        padding: 20px;     
+    }
+    #alist>a{
+        text-decoration: none;
+        color: white;
+    }
+    #alist>a:hover{
+        color: rgb(0, 183, 255);
+    }
+    .footersection{
+        display: flex;
+        flex-wrap: wrap;
+        height: 105px;
+        background-color: black;
+        color: white;
+        font-size: 15px;
+        font-family: 'Times New Roman', Times, serif;
+        align-items:center;
+        justify-content: space-around;
+        border-top: 1px solid gray;
+        width: 100%;
+    }
+    .google{
+        font-size: 11px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        background-color: black;
+        color: gray;
+        margin: 0px;
+        padding-left: 40px;
+        padding-bottom: 10px;
+    }
+    .imgfooter{
+        border-radius: 50%;
+    }
+    h1{
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        border-bottom: 1px solid gray;
+        margin: 30px;
+        padding-bottom: 10px;
+        font-size: 25px;
+    }
+    .popularcontainer{
+        display: grid;
+        grid-template-columns: 33.33% 33.33% 33.33% ;
+        grid-template-rows: 1fr;
+        margin: 20px;
+        background-color: black;
+    }
+    /* .popularcontainer a{
+        justify-self: center;
+        align-self: center;
+    } */
+    .populargrid{
+        padding: 5px;
+    }
+    /* .populargrid>a{
+        justify-self: center;
+        align-self: flex-start
+    } */
+    .title>a{
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 19px;
+        color: white;
+
+    }
+    .title>a:hover{
+        color: rgb(0, 183, 255);
+    }
+    .title{
+        color: white;
+        text-align: center;
+        font-size: 15px;
+        font-family: sans-serif;
+    }
+    #gettickets{
+        border-radius: 15px;
+        font-size: 15px;
+        padding: 8px;
+        padding-left: 18px;
+        padding-right: 18px;
+        margin: 8px;
+        background-color: initial;
+        font-family: Arial, Helvetica, sans-serif;
+        outline: none;
+        color: white;
+        border: 1px solid white;
+    }
+    #trailer{
+        -webkit-appearance: button;
+        -moz-appearance: button;
+         appearance: button;
+        text-decoration: none;
+        border-radius: 15px;
+        font-size: 15px;
+        /* padding: 8px; */
+        padding-left: 20px;
+        padding-right: 20px;
+        margin: 8px;
+        background-color: initial;
+        font-family: Arial, Helvetica, sans-serif;
+        outline: none;
+        color: white;
+        border: 1px solid white;
+    }
+    #gettickets:hover{ 
+        color: rgb(0, 183, 255);
+        border: 1px solid rgb(0, 183, 255);
+} 
+    #trailer:hover{
+        color: rgb(0, 183, 255);
+        border: 1px solid rgb(0, 183, 255);
+    }
+    .contact{
+        display: flex;
+        flex-wrap: wrap;
+        background-color: initial;
+        width: 100%;
+        height: 500px;
+        align-items:center;
+        justify-content: space-around;
+    }
+    .gridconst{
+        display: grid;
+        grid-template-columns: 100% ;
+        grid-template-rows: 80% 20%;
+        background-color:initial;
+        justify-content: center;
+        justify-self: center;
+        padding: 20px;
+        position: relative;
+        top: 100px;
+        margin-top: 40px;
+
+    }
+    .construction{
+        font-size: 300%;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        text-align: center;
+        padding: 5px;
+    }
+    .homeconst{
+        text-decoration: none;
+        color: white;
+        text-align: center;
+        font-size: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .homeconst:hover{
+        color: rgb(0, 183, 255);
+    }
+        
+    @media only screen and (max-width: 768px) {
+        body{background-color: black;
+            background-image: none;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: 100% ;
+            grid-template-rows: 1fr 1fr;
+            margin: 10px;
+            background-color: black;
+        }
+        .itema{
+            justify-self: start;
+            padding: 20px;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 2;
+            grid-row-start: 2;
+        }
+        .itemb{
+                justify-self: stretch;
+                align-self: center;
+                grid-row-start: 1;
+        }
+        .sign{
+                   display: none;
+        }
+        #imgfloat{
+            
+            border-radius: 60%;
+            position: relative; 
+            left: 10%; 
+            width: 70px;
+            height: 60px;
+        } 
+        .navbar{
+           
+            padding: 3px;
+            font-size: 15px;
+           
+        }
+        #searchmovies{
+              width: 40px;
+        }
+        #searchmovies:focus{
+            width: 70px;
+        }
+        .footersection{
+            display: grid;
+            grid-template-columns: 100% ;
+            grid-template-rows: 33.33% 33.33% 33.33%;
+            background-color: black;
+            color: white;
+            font-size: 13px;
+            /* margin-bottom: 20px; */
+        }
+        .imgfooter{
+            justify-self: center;
+                align-self: center;
+                grid-row-start: 2;
+                height: 50px ;
+                width: 60px;
+            
+        }
+        .copyright{
+            justify-self: center;
+            align-self: center;
+            grid-row-start: 1; 
+        }
+        .group{
+            justify-self: center;
+            align-self: center;
+            grid-row-start: 3;   
+        }
+        .container1{
+            display: grid;
+            grid-template-columns: 100% ;
+            grid-template-rows: 1fr;
+            margin: 10px;
+            background-image: linear-gradient(to bottom right, rgb(85, 15, 15) , black);
+        }
+        #alist{
+            display: none;
+        }
+        .itema1{
+            padding-right: 20px;
+        }
+        .popularcontainer{
+            display: grid;
+            grid-template-columns: 100% ;
+            grid-template-rows: 1fr 1fr 1fr;
+            margin: 0px;
+            background-color: black;
+            padding: 10px;
+            padding-right: 0px;
+        }
+        /* .populargrid>a{
+            justify-self: center;
+            align-self: flex-start
+        } */
+        .populargrid{
+            margin: 0px;
+            padding: 0px;
+        }
+        h1{
+            font-size: 20px;
+        }
+        .gridconst{
+           
+            background-color:initial;
+            padding: 20px;
+            margin-top: 20px;
+    
+        }
+        .construction{
+            font-size: 200%;
+        }
+        .homeconst{  
+            font-size: 25px;
+        }
+        #signin{
+           
+            padding: 7px;
+            padding-left: 16px;
+            padding-right: 16px;
+            margin: 6px;
+            font-size: 13px;
+           
+        }
+        #join{
+            
+            padding: 7px;
+            padding-left: 16px;
+            padding-right: 16px;
+            margin: 6px;
+            font-size: 13px;
+        }
+            #gettickets{
+                
+                padding: 8px;
+                padding-left: 10px;
+                padding-right: 10px;
+                margin: 1px;
+                font-size: 15px;
+            }
+                
+            #trailer{
+               
+                padding: 2px;
+                padding-left: 18px;
+                padding-right: 18px;
+                margin: 1px;
+                font-size: 15px;
+            }
+            .google{
+                font-size: 10px;
+               
+                padding-left: 20px;
+                padding-right: 2px;
+            }
+            
+    }
